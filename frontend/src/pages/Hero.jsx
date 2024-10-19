@@ -1,12 +1,14 @@
 import { AboutUs, WhyUs, ContactUs, Footer } from "../components";
+import Spline from '@splinetool/react-spline';
 
 
 
 const Hero = () => {
   return (
-    <div className="bg-zinc-900 h-screen text-white">
-      <h1 className="text-4xl font-bold text-white">Welcome to the Hero Component</h1>
-
+    <div className="bg-zinc-950 h-screen text-white">
+      <div className="absolute top-[-30%] left-[-10%]">
+      <Spline scene="https://prod.spline.design/xS4a3m1PBVY7CKFS/scene.splinecode" />
+      </div>
       <AboutUs/>
       <WhyUs/>
       <ContactUs/>
