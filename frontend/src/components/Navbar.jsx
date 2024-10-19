@@ -1,13 +1,16 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
+
 
 const Navbar = () => {
-  const navItems = [
-    { name: 'Home', target: 'home' },
-    { name: 'About Us', target: 'about' },
-    { name: 'Services', target: 'whyus' },
-    { name: 'Projects', target: 'contact' },
-    { name: 'News', target: 'footer' },
-  ];
+    const navigate = useNavigate();
+    const navItems = [
+        { name: 'Home', target: 'home' },
+        { name: 'About Us', target: 'about' },
+        { name: 'Services', target: 'whyus' },
+        { name: 'Projects', target: 'contact' },
+        { name: 'News', target: 'footer' },
+    ];
   const [hoveredItem, setHoveredItem] = useState(null);
 
   // Handle smooth scroll when clicking on a nav item
@@ -16,6 +19,11 @@ const Navbar = () => {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
+  };
+
+  const handleSearchFlightsClick = () => {
+    console.log('Navigating to /dashboard');
+    navigate('/dashboard');
   };
 
   return (
@@ -50,8 +58,8 @@ const Navbar = () => {
       </div>
 
       {/* Button */}
-      <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition duration-300">
-        Sign In
+      <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition duration-300" onClick={handleSearchFlightsClick}>
+        Search Flights
       </button>
     </nav>
   );
