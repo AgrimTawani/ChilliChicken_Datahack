@@ -45,17 +45,17 @@ const Hero = () => {
       <div className="flex flex-row flex-nowrap">
 
       <div ref={containerRef} className="flex flex-row flex-nowrap bg-black min-h-screen">
-      <div className="flex-1 text-white flex flex-col items-center justify-center gap-[10px]">
-        <h1 ref={textRef} className="text-5xl md:text-7xl font-bold text-center mb-4 ml-[20%]">
+      <div className="flex-1 text-white flex flex-col items-center justify-center gap-[10px] mr-[10%]">
+        <h1 ref={textRef} className="text-5xl md:text-7xl font-bold text-center mb-4 ">
           Welcome to
           <br />
           <span className="bg-gradient-to-r from-cyan-400 to-blue-500 text-transparent bg-clip-text"> Flightly</span>.
         </h1>
-        <button ref={buttonRef} className="bg-white text-black py-2 px-6 rounded-full font-semibold hover:bg-gray-200 transition-colors">
+        <button ref={buttonRef} className="bg-white text-black py-2 px-4 rounded-full font-semibold hover:bg-gray-200 transition-colors">
           Search Flights
         </button>
       </div>
-      <div ref={splineRef} className="flex-1 bg-custom-bg h-[80%] mt-[10%] mr-[5%] ml-[-37%]">
+      <div ref={splineRef} className="flex-1 bg-custom-bg h-[80%] mt-[5%] mr-[10%] ml-[-53%]">
         <Spline scene="https://prod.spline.design/xS4a3m1PBVY7CKFS/scene.splinecode" />      
       </div>
       </div>
@@ -68,5 +68,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
-
+export default Hero;
