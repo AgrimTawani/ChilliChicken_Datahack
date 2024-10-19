@@ -3,6 +3,7 @@ import { AboutUs, WhyUs, ContactUs, Footer, Navbar } from "../components";
 import Spline from '@splinetool/react-spline';
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 
 const Hero = () => {
 
@@ -11,6 +12,14 @@ const Hero = () => {
   const buttonRef = useRef(null);
   const splineRef = useRef(null);
 
+  const navigate = useNavigate(); // Initialize useNavigate
+
+  // Click handler to navigate to /dashboard
+  const handleSearchFlightsClick = () => {
+    console.log('Navigating to /dashboard');
+    navigate('/dashboard');
+  };
+  
   useEffect(() => {
     const container = containerRef.current;
     const text = textRef.current;
@@ -38,9 +47,8 @@ const Hero = () => {
 
   }, []);
 
-
   return (
-    <div className="bg-black h-screen text-white overflow-x-hidden relative ">
+    <div className="bg-black h-screen text-white overflow-x-hidden relative" id="home">
       <Navbar />
       <div className="flex flex-row flex-nowrap">
 
@@ -51,21 +59,29 @@ const Hero = () => {
           <br />
           <span className="bg-gradient-to-r from-cyan-400 to-blue-500 text-transparent bg-clip-text"> Flightly</span>.
         </h1>
-        <button ref={buttonRef} className="bg-white text-black py-2 px-4 rounded-full font-semibold hover:bg-gray-200 transition-colors">
+        
+        {/* Button with onClick to navigate */}
+        <button 
+          ref={buttonRef} 
+          className="bg-white text-black py-2 px-4 rounded-full font-semibold"
+          onClick={handleSearchFlightsClick} // Handle button click
+        >
           Search Flights
         </button>
+        
       </div>
       <div ref={splineRef} className="flex-1 bg-custom-bg h-[80%] mt-[5%] mr-[10%] ml-[-53%]">
         <Spline scene="https://prod.spline.design/xS4a3m1PBVY7CKFS/scene.splinecode" />      
       </div>
       </div>
       </div>
-      <AboutUs />
-      <WhyUs />
-      <ContactUs />
+      {/* Assign IDs to these sections */}
+      <div id="about"><AboutUs /></div>
+      <div id="whyus"><WhyUs /></div>
+      <div id="contact"><ContactUs /></div>
       <Footer />
     </div>
   );
 };
 
-export default Hero;
+export default Hero;
