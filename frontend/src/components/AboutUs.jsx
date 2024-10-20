@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 const AboutUs = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-500 via-black/90 to-blue-500 text-white overflow-hidden flex items-center">
@@ -35,4 +36,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default AboutUs;

@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { AboutUs, WhyUs, ContactUs, Footer, Navbar } from "../components";
+import { AboutUs, CardGrid, ContactUs, Footer, Navbar } from "../components";
 import Spline from '@splinetool/react-spline';
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
@@ -77,7 +77,7 @@ const Hero = () => {
       </div>
       {/* Assign IDs to these sections */}
       <div id="about"><AboutUs /></div>
-      <div id="whyus"><WhyUs /></div>
+      <div id="whyus"><CardGrid /></div>
       <div id="contact"><ContactUs /></div>
       <Footer />
     </div>

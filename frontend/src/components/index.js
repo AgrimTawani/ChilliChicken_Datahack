@@ -1,9 +1,10 @@
 import AboutUs from "./AboutUs";
-import WhyUs from "./WhyUs";
+import CardGrid from "./CardGrid";
 import ContactUs from "./ContactUs";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
+import SideBar from "./SideBar";
 
 
 
-export {AboutUs, WhyUs, ContactUs, Footer, Navbar}
+export {AboutUs, CardGrid, ContactUs, Footer, Navbar, SideBar}
