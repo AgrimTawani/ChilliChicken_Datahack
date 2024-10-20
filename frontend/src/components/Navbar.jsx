@@ -8,8 +8,7 @@ const Navbar = () => {
         { name: 'Home', target: 'home' },
         { name: 'About Us', target: 'about' },
         { name: 'Services', target: 'whyus' },
-        { name: 'Projects', target: 'contact' },
-        { name: 'News', target: 'footer' },
+        { name: 'Why us', target: 'WhyUs' },
     ];
   const [hoveredItem, setHoveredItem] = useState(null);
 

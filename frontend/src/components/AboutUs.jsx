@@ -19,12 +19,9 @@ const AboutUs = () => {
             </h1>
             <div className="max-w-3xl mx-auto">
               <p className="text-gray-300 mb-6">
-                we are wtv we are because the because
+                Our team is here to create a seamless and smooth, yet interactive experience for you.
               </p>
-              <p className="text-gray-300 mb-8">
-                If you're looking for a forward-thinking team of creatives to build a brand identity
-                that stands out from the crowd, then you're exactly where you need to be.
-              </p>
+              
               <button className="bg-black hover:bg-gray-800 text-white font-bold py-3 px-8 rounded-full transition-colors">
                 Contact Us
               </button>

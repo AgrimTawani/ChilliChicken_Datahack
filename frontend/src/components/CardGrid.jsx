@@ -74,27 +74,27 @@ const CardGrid = () => {
       setCards([
         {
           id: 1,
-          title: "The Evolution of UI Design",
-          subtitle: "From skeuomorphism to flat design and beyond, explore the journey of user interface design. Discover how design trends have shaped the digital landscape and what the future holds for UI/UX.",
-          imageUrl: "/api/placeholder/400/300"
+          title: "Flight Details display",
+          subtitle: "Displays an interactive dashboard using airline number",
+          imageUrl: "pic1.jpg"
         },
         {
           id: 2,
-          title: "Responsive Web Development",
-          subtitle: "Crafting seamless experiences across devices has become crucial in our multi-screen world. Learn about the principles, techniques, and best practices for creating responsive websites that look great on any device.",
-          imageUrl: "/api/placeholder/400/300"
+          title: "Flight delay analysis",
+          subtitle: " analyzes the delay in arrival based on various weather condition factors.",
+          imageUrl: "pic2.jpg"
         },
         {
           id: 3,
-          title: "The Rise of Progressive Web Apps",
-          subtitle: "Blurring the line between web and native applications, Progressive Web Apps are changing how we think about mobile experiences. Dive into the technology behind PWAs and their impact on web development.",
-          imageUrl: "/api/placeholder/400/300"
+          title: "User friendly for all",
+          subtitle: "Our vision is to craft a seamless experience for all users, general public, pilots and operational teams",
+          imageUrl: "pic3.png"
         },
         {
           id: 4,
-          title: "Accessibility in Modern Websites",
-          subtitle: "Ensuring the web is open for everyone is not just a noble goal, it's a necessity. Explore the importance of web accessibility, common challenges, and how to implement accessible design in your projects.",
-          imageUrl: "/api/placeholder/400/300"
+          title: "Creative interactive interface ",
+          subtitle: "Interactive animated interface to interesting to use.",
+          imageUrl: "pic4.jpg"
         }
       ]);
     }, 1000); // Delay to simulate loading
